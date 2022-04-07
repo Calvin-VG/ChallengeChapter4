@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_component"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.challengechapter4.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_home1Fragment"
+            app:destination="@id/home1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.challengechapter4.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_home1Fragment"
+            app:destination="@id/home1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.challengechapter4.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home1Fragment"
+        android:name="com.example.challengechapter4.Home1Fragment"
+        android:label="fragment_home1"
+        tools:layout="@layout/fragment_home1" >
+        <action
+            android:id="@+id/action_home1Fragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_home1Fragment_to_home2Fragment2"
+            app:destination="@id/home2Fragment2" />
+        <action
+            android:id="@+id/action_home1Fragment_to_home4Fragment2"
+            app:destination="@id/home4Fragment2" />
+        <action
+            android:id="@+id/action_home1Fragment_to_home3Fragment"
+            app:destination="@id/home3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home3Fragment"
+        android:name="com.example.challengechapter4.Home3Fragment"
+        android:label="fragment_home4"
+        tools:layout="@layout/fragment_home4" />
+    <fragment
+        android:id="@+id/home2Fragment2"
+        android:name="com.example.challengechapter4.Home2Fragment"
+        android:label="Home2Fragment" />
+    <fragment
+        android:id="@+id/home4Fragment2"
+        android:name="com.example.challengechapter4.Home4Fragment"
+        android:label="Home4Fragment" />
+</navigation>
